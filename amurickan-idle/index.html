@@ -106,7 +106,7 @@ button{
 <h3 center id="messenger">no new updates</h3>
 <h3 center>Uncollected: <span id="au">0</span> | Soldiers: <span id="csold">0</span> | Conquerers: <span id="cconq">0</span></h3>
 <div flex center>
-  <button center onclick="let e=this;e.innerHTML='Found 10 citizens! Get the coins!';setTimeout(function(){e.innerHTML='Conquer land';},3000);add();add();add();add();add();add();add();add();add();add();">Conquer land</button>
+  <button center onclick="let e=this;e.innerHTML='Found 10 coins! Get them!';setTimeout(function(){e.innerHTML='Conquer land';},3000);add();add();add();add();add();add();add();add();add();add();">Conquer land</button>
   <button center onclick="if (i > 49){sc++;document.getElementById('csold').innerHTML=sc;i -= 50;document.getElementById('valyou').innerHTML ='AMERICOIN COLLECTION - YOU HAVE $' + i;buygunner();} else {message('you havent enough money, sire')}">Recruit soldier ($50)</button>
   <button center onclick="if (i > 99){cc++;document.getElementById('cconq').innerHTML=cc;i -= 100;document.getElementById('valyou').innerHTML ='AMERICOIN COLLECTION - YOU HAVE $' + i;buyconquerer();} else {message('you havent enough money, sire')}">Recruit conquerer ($100)</button>
 </div><p></p>
