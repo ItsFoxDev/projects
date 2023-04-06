@@ -30,7 +30,7 @@
 <button hide id="add" onclick="a++;document.getElementById('au').innerHTML=a;"></button>
 <button hide id="sub" onclick="a--;document.getElementById('au').innerHTML=a;"></button>
 <button hide id="smcb" onclick="smc++;document.getElementById('smc').innerHTML=smc;"></button>
-<button hide id="smcc" onclick="smc=0;document.getElementById('smc').innerHTML=null;"></button>
+<button hide id="smcc" onclick="smc=1;document.getElementById('smc').innerHTML=null;"></button>
 <!-- partial -->
   <script>let i = 0; /* i = money count */
     let a = 0; /* a = americoins uncollected count */
@@ -97,6 +97,7 @@
       } else {
         document.getElementById('smv').style.display='none';
         document.getElementById('smc').innerHTML = null;
+        document.getElementById('smcc').click();
         r.innerHTML=m;
         console.log('ran')
       }
